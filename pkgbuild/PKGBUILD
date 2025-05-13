@@ -4,7 +4,7 @@
 pkgname=comm-libvirt-config
 pkgdesc="Complete libvirt and qemu configuration."
 depends=('qemu-full' 'virt-manager' 'virt-viewer' 'dnsmasq' 'vde2' 'bridge-utils' 'openbsd-netcat')
-conflicts=("$pkgname-git",'virtualbox')
+conflicts=("$pkgname-git" 'virtualbox')
 pkgver=$(date +%y.%m.%d)
 pkgrel=$(date +%H%M)
 arch=('any')
