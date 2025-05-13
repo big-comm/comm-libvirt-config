@@ -1,14 +1,10 @@
+# Maintainer: Leonardo Berbert leo4berbert@gmail.com
 # Maintainer: Tales A. Mendonça <talesam@gmail.com>
 
-pkgname=pkgbuild-template
-pkgdesc="Package template for Communitybig"
-# Uncomment and edit the following lines as needed
-#depends=('')
-#makedepends=('')
-#optdepends=('')
-#conflicts=('')
-#provides=('')
-#replaces=('')
+pkgname=comm-libvirt-config
+pkgdesc="Complete libvirt and qemu configuration."
+depends=('qemu-full' 'virt-manager' 'virt-viewer' 'dnsmasq' 'vde2' 'bridge-utils' 'openbsd-netcat')
+conflicts=("$pkgname-git",'virtualbox')
 pkgver=$(date +%y.%m.%d)
 pkgrel=$(date +%H%M)
 arch=('any')
