@@ -36,7 +36,7 @@ post_install() {
 
 # Function executed after package upgrade
 post_upgrade() {
-    echo "printMsg Reapplying configuration after upgrade..."
+    printMsg "Reapplying configuration after upgrade..."
     post_install
 }
 
